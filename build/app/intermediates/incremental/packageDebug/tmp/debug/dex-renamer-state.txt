@@ -1,4 +1,4 @@
-#Wed Oct 27 22:18:35 BRT 2021
+#Thu Oct 28 19:52:21 BRT 2021
 base.0=/home/uenis/Documentos/my_cloud_filmes/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

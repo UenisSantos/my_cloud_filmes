@@ -208,7 +208,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                           },
                                         ),
 
-                                        OutlinedButton(onPressed: () async {
+                                        ElevatedButton(
+                                          onPressed: () async {
                                           await launch('https://www.google.com/search?q=${widget.movie.title!}'); // add your url
                                         }, child:Text(  "Tenha  mais informaçoẽs  sobre ${widget.movie.title}",style: widget.themeData.
                                         textTheme.bodyText2,),
