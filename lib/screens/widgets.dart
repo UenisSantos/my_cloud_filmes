@@ -25,7 +25,7 @@ class _DiscoverMoviesState extends State<DiscoverMovies> {
   @override
   void initState() {
     super.initState();
-    fetchMovies(Endpoints.upcomingMoviesUrl(1)).then((value) {
+    fetchMovies(Endpoints.nowPlayingMoviesUrl(1)).then((value) {
       setState(() {
         moviesList = value;
       });

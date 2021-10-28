@@ -22,20 +22,20 @@ class CastAndCrew extends StatelessWidget {
             tabs: [
               Tab(
                 child: Text(
-                  'Cast',
+                  'elenco',
                   style: themeData!.textTheme.bodyText1,
                 ),
               ),
               Tab(
                 child: Text(
-                  'Crew',
+                  'Equipe técnica',
                   style: themeData!.textTheme.bodyText1,
                 ),
               ),
             ],
           ),
           title: Text(
-            'Cast And Crew',
+            'Elenco e equipe',
             style: themeData!.textTheme.headline5,
           ),
           leading: IconButton(

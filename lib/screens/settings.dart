@@ -15,7 +15,7 @@ class _SettingsPageState extends State<SettingsPage> {
   int? option;
   final List<Color> colors = [Colors.white, Color(0xff242248), Colors.black];
   final List<Color> borders = [Colors.black, Colors.white, Colors.white];
-  final List<String> themes = ['Light', 'Dark', 'Amoled'];
+  final List<String> themes = ['Light', 'Dark', 'Black'];
 
   @override
   void initState() {

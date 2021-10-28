@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:myfilmes/api/endpoints.dart';
@@ -7,12 +8,14 @@ import 'package:myfilmes/modal_class/genres.dart';
 
 import 'package:myfilmes/modal_class/movie.dart';
 import 'package:myfilmes/screens/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MovieDetailPage extends StatefulWidget {
   final Movie movie;
   final ThemeData themeData;
   final String heroId;
   final List<Genres> genres;
+
   MovieDetailPage(
       {required this.movie,
       required this.themeData,
@@ -204,6 +207,15 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                             modalBottomSheetMenu(cast);
                                           },
                                         ),
+
+                                        OutlinedButton(onPressed: () async {
+                                          await launch('https://www.google.com/search?q=${widget.movie.title!}'); // add your url
+                                        }, child:Text(  "Tenha  mais informaçoẽs  sobre ${widget.movie.title}",style: widget.themeData.
+                                        textTheme.bodyText2,),
+                                        )
+
+
+
                                       ],
                                     ),
                                   ),
